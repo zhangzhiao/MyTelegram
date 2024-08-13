@@ -586,7 +586,7 @@ static OPUS_INLINE void silk_noise_shape_quantizer_10_16_sse4_1(
             /* silk_SAT16 */
             xmm_xq_Q14_3210 = _mm_packs_epi32( xmm_xq_Q14_3210, xmm_xq_Q14_7654 );
 
-            /* save to xq */
+            /*  save to xq */
             _mm_storeu_si128( (__m128i *)(&xq[ i ] ), xmm_xq_Q14_3210 );
         }
     }
